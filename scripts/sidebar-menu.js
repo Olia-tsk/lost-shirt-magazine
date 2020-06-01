@@ -1,14 +1,18 @@
-const openBtn = document.querySelector('.sidebar__hamburger');
-const closeBtn = document.querySelector('.sidebar__close');
-const sidebar = document.querySelector('.sidebar');
+(function() {
 
-function openSidebar() {
-    sidebar.classList.add('sidebar--opened');
-};
+    const openBtn = document.querySelector('.sidebar__hamburger');
+    const closeBtn = document.querySelector('.sidebar__close');
+    const sidebar = document.querySelector('.sidebar');
 
-function closeSidebar() {
-    sidebar.classList.remove('sidebar--opened');
-};
+    function openSidebar() {
+        sidebar.classList.add('sidebar--opened');
+    };
 
-openBtn.addEventListener('click', openSidebar);
-closeBtn.addEventListener('click', closeSidebar);
+    function closeSidebar() {
+        sidebar.classList.remove('sidebar--opened');
+    };
+
+    openBtn.addEventListener('click', openSidebar);
+    closeBtn.addEventListener('click', closeSidebar);
+
+}());
